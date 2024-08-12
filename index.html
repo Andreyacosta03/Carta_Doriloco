@@ -19,12 +19,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 35px;
         padding: 20px; /* Añadido para mejor apariencia en dispositivos pequeños */
       }
       .div {
-        width: 100%;
-        max-width: 800px;
+        width: 60%;
         text-align: center;
       }
       .menu-image {
@@ -34,22 +33,25 @@
       }
 
       /* Media Queries para pantallas más pequeñas */
-      @media (max-width: 768px) {
-        .menu-image {
+      @media screen and (max-width : 375px) {
+        .div {
           width: 80%;
         }
       }
-
-      @media (max-width: 480px) {
-        .menu-image {
+      @media screen and (max-width : 768px) {
+        .div {
           width: 100%;
         }
       }
-    </style>
-  </head>
+      @media screen and (max-width : 1000px) {
+        .div {
+          width: 100%;
+        }
+      }
+   </style>
   <body>
     <div class="div_gif div">
-      <img class="video_gif menu-image" src="gif_dorilocos.gif" />
+     <img src="Carta1.jpeg" alt="Menú Foto 1" class="menu-image" />
     </div>
 
     <div class="menu_carta carta1 div">
@@ -57,7 +59,16 @@
     </div>
 
     <div class="menu_carta carta2 div">
-      <img src="Carta1.jpeg" alt="Menú Foto 1" class="menu-image" />
+      <img src="Carta1.jpeg" alt="Menú Foto 3" class="menu-image" />
+    </div>
+
+    <div class="menu_carta carta3 div">
+      <img src="hamburguesa.gif" alt="Menú Foto 4" class="menu-image" />
+    </div>
+
+     <div class="menu_carta carta3 div">
+      <img src="hamburguesa2.gif" alt="Menú Foto 5" class="menu-image" />
     </div>
   </body>
 </html>
+
